@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./contact.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./contact.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-container">
-          <div class="container-div"><a href="./index.html">Your Name</a></div>
-          <nav>
-            <ul>
-              <li><a href="./contact.html">Contact</a></li>
-              <li><a href="./portfolio.html">Portfolio</a></li>
-              <li><a id="about" href="./index.html">About</a></li>
-            </ul>
-          </nav>
+      <div class="header-container">
+        <div class="container-div"><a href="./index.html">Your Name</a></div>
+        <nav>
+          <ul>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a id="about" href="./index.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="big-section">
+        <h2>Contact</h2>
+        <form action="">
+          <label for="name">Name</label><br />
+          <input
+            placeholder="Aziz Azizli"
+            required
+            id="name"
+            type="text"
+          /><br />
+          <label for="email">Email</label><br />
+          <input
+            placeholder="azizliaziz025@gmail.com"
+            required
+            type="email"
+          /><br />
+          <label for="message">Message</label><br />
+          <textarea required name="" id="message" cols="30" rows="10"></textarea
+          ><br />
+          <button>Send</button>
+        </form>
+      </section>
+      <section class="small-section">
+        <div class="small-section-div">
+          <h3>Connect with Me</h3>
+          <a href="https://github.com/AzizAzizli" target="_blank"
+            ><img src="./assets/github-128.png" alt=""
+          /></a>
+          <a href=""><img src="./assets/linkedin-128.png" alt="" /></a>
+          <a href=""><img src="./assets/stackoverflow-128.png" alt="" /></a>
         </div>
-      </header> 
-      <main>
-        <section class="big-section">
-            <h2>Contact</h2>
-            <form action="">
-                <label for="name">Name</label><br>
-                <input placeholder="Aziz Azizli" required id="name" type="text"><br>
-                <label for="email">Email</label><br>
-                <input placeholder="azizliaziz025@gmail.com"  required type="email"><br>
-                <label for="message">Message</label><br>
-                <textarea required name="" id="message" cols="30" rows="10"></textarea><br>
-                <button>Send</button>
-            </form>
-        </section>
-        <section class="small-section">
-            <div class="small-section-div">
-              <h3>Connect with Me</h3>
-              <a href=""><img src="./assets/github-128.png" alt="" /></a>
-              <a href=""><img src="./assets/linkedin-128.png" alt="" /></a>
-              <a href=""><img src="./assets/stackoverflow-128.png" alt="" /></a>
-            </div>
-          </section>
-      </main>
-      <footer><h4>Copyright © 2017 Your Name</h4></footer>
-</body>
+      </section>
+    </main>
+    <footer><h4>Copyright © 2017 Your Name</h4></footer>
+  </body>
 </html>

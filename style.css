@@ -1,5 +1,5 @@
-header {
-    position: sticky;
+/* header {
+  position: sticky;
   width: 100%;
   height: 90px;
   background-color: #fff;
@@ -58,15 +58,64 @@ li a {
 }
 #about {
   border: none;
+} */
+header {
+  position: sticky;
+  z-index: 1;
+  width: 100%;
+  height: 90px;
+  margin: 0 0 30px;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+}
+.header-container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container-div a {
+  float: left;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+}
+nav {
+  float: right;
+  margin-top: 25px;
+}
+nav li {
+  float: right;
+}
+nav li a {
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  border-left: 1px solid #efefef;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+}
+#about {
+  border: none;
 }
 body {
   background-image: url("./assets/concrete_seamless.png");
 }
+main {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
 .big-section {
   box-sizing: border-box;
-  position: relative;
-  top: 8px;
-  left: 280px;
+  float: left;
 
   width: 100%;
   max-width: 650px;
@@ -106,16 +155,15 @@ p {
   margin-bottom: 20px;
 }
 .small-section {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
+  float: right;
+  width: 100%;
   max-width: 270px;
 
   padding: 30px;
   margin-bottom: 20px;
   background-color: #fff;
   border: 1px solid #ddd;
-  position: absolute;
-  top: 130px;
-  left: 970px;
 }
 h3 {
   padding-bottom: 20px;
@@ -130,18 +178,20 @@ h3 {
 .small-section-div img {
   width: 62px;
 
-  margin: 8px 6px 0px 0px;
+  margin: 8px 0px 0px 0px;
 }
+
 footer {
+  clear: both;
   box-sizing: border-box;
-    padding: 30px 0;
-    background-color: #666;
-    border-top: 8px solid #4aaaa5;
-    height: 104px;
-  }
-  h4 {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 12px;
-    color: #ccc;
-    text-align: center;
-  }
+  padding: 30px 0;
+  background-color: #666;
+  border-top: 8px solid #4aaaa5;
+  height: 104px;
+}
+h4 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+  color: #ccc;
+  text-align: center;
+}
